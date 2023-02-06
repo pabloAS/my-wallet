@@ -1,0 +1,279 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa;
+}
+
+.homeHeader {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(102, 102, 102, 0.25);
+  color: #5900d5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.homeInfosHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  height: 40px;
+}
+.homeInfosHeader abbr > .sair {
+  background: none;
+  border: none;
+  color: #5900d5;
+  cursor: pointer;
+}
+.sair:hover {
+  transition: 0.3s;
+  color: #8443de;
+}
+
+/* Primeiro conteudo */
+.homeInfosGeral {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeSaldoConta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.valor {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #5900d5;
+  box-shadow: 0px 4px 4px rgba(102, 102, 102, 0.25);
+  border-radius: 10px;
+}
+
+.valor h1 {
+  font-size: 30px;
+}
+.valor p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.homeMovi {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0;
+  border-radius: 50%;
+  border: none;
+  background: #5900d5;
+  box-shadow: 0px 4px 4px rgba(102, 102, 102, 0.25);
+}
+.homeMovi:hover {
+  transition: 0.6s;
+  background: #4601a6;
+  cursor: pointer;
+}
+/* segundo conteudo */
+.homeList {
+  background: #5900d5;
+  width: 100%;
+  height: 62.3vh;
+  border-radius: 50px 50px 0 0;
+  display: flex;
+  padding: 30px 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeList h1 {
+  color: #f8f9fa;
+}
+
+.notFund {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px;
+  gap: 10px;
+  color: #8443de;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.listItem {
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+  box-shadow: 0px 4px 4px rgba(102, 102, 102, 0.25);
+}
+
+.movItem,
+.descriptionIcon,
+.dataIcon {
+  display: flex;
+  align-items: center;
+  color: #f8f9fa;
+  font-size: 20px;
+  gap: 10px;
+}
+.movItem {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.movItem > .entrada {
+  color: #97f784;
+}
+.movItem > .saida {
+  color: #fb6e6e;
+}
+
+.descriptionIcon {
+  width: 30%;
+}
+.dataIcon {
+  width: 30%;
+  font-style: italic;
+  font-weight: 300;
+}
+/* overlay */
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(68, 68, 68, 0.62);
+}
+
+.formOverlay {
+  height: 550px;
+  width: 500px;
+  background: #5900d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 10px;
+  color: #f8f9fa;
+}
+.formOpt {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.formOpt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 470px;
+  width: 86%;
+  border-radius: 10px;
+  background: #4601a6;
+  box-shadow: 9px 12px 4px rgba(0, 0, 0, 0.25);
+}
+.formOpt2 > .description {
+  width: 70%;
+  margin: 10px 0;
+  text-align: center;
+  height: 50px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  color: #f8f9fa;
+  box-shadow: 9px 12px 4px rgba(0, 0, 0, 0.25);
+}
+.formOpt2 > .valorDinheiro {
+  height: 300px;
+  width: 70%;
+  font-size: 50px;
+  text-align: center;
+  background: none;
+  border: none;
+  color: #f8f9fa;
+}
+.formOpt2 > input::placeholder {
+  color: #c1c1c1;
+}
+
+.formOverlayBtn {
+  height: 90px;
+  width: 75px;
+  background: #2c0662;
+  border: none;
+  border-radius: 50%;
+  margin: 10px 0;
+  cursor: pointer;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* responsividade */
+@media only screen and (max-width: 362px) {
+  .homeSaldoConta {
+    margin: 0;
+  }
+
+  .movItem,
+  .descriptionIcon,
+  .dataIcon {
+    font-size: 10px;
+    gap: 1px;
+  }
+}
+
+@media only screen and (max-width: 634px) {
+  .homeInfosHeader {
+    justify-content: flex-end;
+  }
+  .homeInfosHeader > h3 {
+    display: none;
+  }
+
+  .homeList {
+    padding: 10px;
+  }
+
+  .movItem,
+  .descriptionIcon,
+  .dataIcon {
+    font-size: 15px;
+  }
+
+  .formOverlay {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 907px) {
+  .movItem,
+  .descriptionIcon,
+  .dataIcon {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1374px) {
+  .homeList {
+    height: 486px;
+  }
+} ;
